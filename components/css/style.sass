@@ -1,0 +1,205 @@
+
+body
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    position: relative;
+body* 
+    font-family: cursive;
+
+.question-app-container 
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    height: 100%;
+
+.application-header 
+    color: white;
+    background: red;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: bold;
+    box-shadow: 0px 1px 10px grey;
+
+img.backbutton-icon 
+    float: left;
+    width: 25px;
+    display: inline-block;
+    vertical-align: top;
+
+.page-heading 
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+
+.application-detail 
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: #FFFFFF;
+    text-align: center;
+
+.application-page-wrap 
+    margin: 7% 0 0 0;
+    display: inline-block;
+
+.instructions 
+    font-size: 23px;
+
+input.user-name-detail 
+    border: 2px solid #4aa245;
+    width: 80%;
+    height: 50px;
+    padding: 15px;
+    margin: 50px 0px;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    text-align: center;
+    color: #848484;
+
+input.go-forward 
+    display: inline-block;
+    width: 40px;
+    transform: scale(-1);
+    background: #4aa245;
+    padding: 20px;
+    border-radius: 40px;
+    vertical-align: middle;
+
+.another-svg-image 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+.questions-page-container 
+    margin: 50px auto;
+    color: white;
+    font-size: 1.4em;
+    width: 80%;
+    text-align: left;
+
+.question-text 
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: black;
+
+.options-each 
+    margin: 10px 25px;
+    display: inline-block;
+    background: #b3adaa;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+.option-text 
+    padding: 10px 25px;
+
+.option-block 
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+input.option-radio-button 
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+.ball-ripple 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    background: #4cdc4c;
+    border-radius: 50%;
+
+.next-end-question 
+    background: #52d6b2;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+
+.next-end-question img 
+    transform: scaleX(-1);
+    width: 30px;
+    vertical-align: middle;
+
+.correct-option-or-not 
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+
+.result-graph-container 
+    width: 70%;
+    height: 70px;
+    margin: 50px auto;
+    text-align: left;
+
+.result-each 
+    display: inline-block;
+    margin-right: -5px;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+
+.legend-block 
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background: red;
+    vertical-align: middle;
+    margin: 0 10px;
+
+.legend-each 
+    display: inline-block;
+    margin: 0 40px 0 0;
+    vertical-align: middle;
+
+a.go-to-answers 
+    text-decoration: none;
+    color: white;
+    background: grey;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #4c4c4c;
+    display: inline-block;
+    margin: 60px;
+
+.thankyou-container.ng-binding 
+    font-size: 50px;
+    margin: 70px 0;
+
+@keyframes slideInRight 
+    from 
+        transform: translateX(100%);
+    
+    to 
+        transform: translateX(0);
+    
+
+@keyframes slideOutLeft 
+    to 
+        transform: translateX(-100%);
+    
+
+.ng-enter 
+    animation: slideInRight 0.5s both ease-in;
+
+.ng-leave 
+    animation: slideOutLeft 0.5s both ease-in;
+

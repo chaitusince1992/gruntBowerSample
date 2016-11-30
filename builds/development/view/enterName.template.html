@@ -1,0 +1,18 @@
+<div class="every-page-container enter-name-container" ng-init="init()">
+    <div class="application-header">
+        <!--        <img class="backbutton-icon" src="img/backbutton.png" />-->
+        <div class="page-heading">Enter the name</div>
+    </div>
+    <div class="application-detail">
+        <form class="application-page-wrap">
+            <div class="instructions">Please enter your name and proceed with the quiz, answers can be multiple choice.</div>
+            <!--        <form class="application-page-wrap" ng-submit="submitUserName()">-->
+            <input class="user-name-detail" type="text" name="User Name" placeholder="Enter your name" ng-model="userName" />
+            <div style="display:inline-block;position:relative">
+                <input type="image" class="go-forward" src="img/backbutton.png" type='submit' ng-click="submitButtonForAnimation($event)" href="#questions" />
+                <div class="another-svg-image">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="every-page-container questions-container" ng-init="init()">
+    <div class="application-header">
+        <img class="backbutton-icon" src="img/backbutton.png" ng-click="goBack()" />
+        <div class="page-heading">Answer The Questions</div>
+    </div>
+    <div class="application-detail">
+        <div class="questions-page-container">
+            <div class="question-text">{{questionInformation.srNo}}. {{questionInformation.questionText}}</div>
+            <div class="options-container">
+                <div class="options-each" ng-repeat="option in questionInformation.options" ng-click="clickedOnOption($event, option)" ng-style="{'background':checkForLastAnswer(questionInformation.givenOption, option.id)}">
+                    <div class="ball-ripple"></div>
+                    <div class="option-block">
+                        <input class="option-radio-button" type="checkbox" name="options" />
+                        <div class="option-text">{{option.option}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="next-end-question" ng-click="goToNextQuestionOrEndTest()">
+            <img src="img/backbutton.png" />
+        </div>
+    </div>
+</div>

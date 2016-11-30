@@ -1,0 +1,19 @@
+<div class="every-page-container questions-container" ng-init="init()">
+    <div class="application-header">
+        <img class="backbutton-icon" src="img/backbutton.png" ng-click="goBack()" />
+        <div class="page-heading">Result</div>
+    </div>
+    <div class="application-detail">
+        <div class="result-graph-container">
+            <span class="result-each" ng-style="{'width':correctWidth,'background':'green'}">{{correctWidthNo}}</span>
+            <span class="result-each" ng-style="{'width':wrongWidth,'background':'red'}">{{wrongWidthNo}}</span>
+            <span class="result-each" ng-style="{'width':noAnswers,'background':'grey'}">{{noAnswersNo}}</span>
+        </div>
+        <div class="legend-container">
+            <div class="legend-block" style="background:green"></div><div class="legend-each">Correct</div>
+            <div class="legend-block" style="background:red"></div><div class="legend-each">Wrong</div>
+            <div class="legend-block" style="background:grey"></div><div class="legend-each">Unanswered</div>
+        </div>
+        <a class="go-to-answers" href="#answers/1">Check Answers</a>
+    </div>
+</div>
